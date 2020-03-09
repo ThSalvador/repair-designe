@@ -6,8 +6,9 @@
 @import 'template/fonts'
 @import 'template/hero'
 @import 'template/control'
-@import 'template/media'
 @import 'template/types'
+@import 'template/design'
+@import 'template/media'
 
 *, *:before, *:after
     box-sizing: border-box
@@ -19,8 +20,9 @@ body
 .section
     &-title
         text-align: center
-        text-transform: uppercase
-        font-family: Yeseva One, sans-serif
+        &__heading
+            font-family: Yeseva One, sans-serif
+            text-transform: uppercase
         &__img
             display: flex
             align-items: center
@@ -31,5 +33,11 @@ body
                 height: 2px
                 background-color: $primary
                 margin: 0px 10px
+        &__descr
+            font-size: 1.07rem
+            line-height: 135%
+            margin: 0 auto
+            margin-top: 1.64rem
+            max-width: 40rem
 img
     max-width: 100%
